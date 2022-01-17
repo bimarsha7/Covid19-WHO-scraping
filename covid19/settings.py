@@ -62,9 +62,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'covid19.pipelines.Covid19Pipeline': 300,
-}
+# ITEM_PIPELINES = {
+#    'covid19.pipelines.Covid19Pipeline': 300,
+# }
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 # MONGO_URI = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000"
