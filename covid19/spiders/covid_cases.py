@@ -42,5 +42,5 @@ class CovidCases(scrapy.Spider):
         # item['cumulative_cases'] = cumulative_cases
         item['countries_cumulative_cases'] = list(zip(countries,cumulative_cases))
 
-        yield scrapy.Request(ur=response.url)
+        yield item
         

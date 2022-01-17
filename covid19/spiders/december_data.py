@@ -4,6 +4,12 @@ import json
 
 class DecemberCovidCases(scrapy.Spider):
     name='decembercases'
+    custom_settings = {
+        "ITEM_PIPELINES" : {
+   'covid19.pipelines.Covid19Pipeline': 300,
+        },    
+    }
+    
     allowed_domains = ['covid19.who.int']
     headers = {
         # "Accept": "application/json",
